@@ -1,0 +1,209 @@
+/* body */
+body {
+    background: maroon;
+}
+/* end body */
+
+/* begin desktop header */
+.header_section {
+    padding-bottom: 150px;
+}
+.header {
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow: 1px 1px white;
+    font-family: 'Bungee Inline', cursive;
+    background: red;
+    border: outset 5px maroon;
+    box-shadow: 0px 0px 20px 2px red;
+    position: fixed;
+}
+.title {
+    font-size: 5vw;
+    font-family: 'Permanent Marker', cursive;
+}
+.tabs {
+    font-size: 2vw;
+}
+/* End desktop header */
+
+/* begin instructor section */
+.instructor_section {
+    width: 100%;
+    height: 300px;
+}
+.instructors {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+.instructor_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    font-family: 'Graduate', cursive;
+    text-align: center;
+    font-size: 100%;
+    text-shadow: .5px .5px gray;
+    background: red;
+    border: groove 4px darkred;
+    box-shadow: 1px 1px 20px 2px red;
+}
+.image {
+    width: 250px;
+    height: 250px;
+}
+/* end instructor section */
+
+/* begin reminder section */
+.reminder_section {
+    background: black;
+    width: 100%;
+    height: 50vh;
+    border-top: groove 4px red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.reminder_nav {
+    width: 80%;
+    height: 100px;
+    background: red;
+    border: groove 4px darkred;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.daily_title {
+    font-family: 'Bungee Inline', cursive;
+}
+.weekly_title {
+    font-family: 'Bungee Inline', cursive;
+}
+.yearly_title {
+    font-family: 'Bungee Inline', cursive;
+}
+.daily_reminders:hover .daily_title {
+    text-shadow: 1px 1px gray;
+}
+.weekly_reminders:hover .weekly_title {
+    text-shadow: 1px 1px gray;
+}
+.yearly_reminders:hover .yearly_title {
+    text-shadow: 1px 1px gray;
+}
+.daily_reminders {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.weekly_reminders {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.yearly_reminders {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.daily_reminders:hover .daily_list {
+    display: flex;
+    flex-direction: column;
+}
+.weekly_reminders:hover .weekly_list {
+    display: flex;
+    flex-direction: column;
+}
+.yearly_reminders:hover .yearly_list {
+    display: flex;
+    flex-direction: column;
+}
+.daily_list {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    color: black;
+    display: none;
+    background:white;
+    background-color:white;
+    box-shadow: 0px 5px 10px 4px white;
+    font-family: 'Graduate', cursive;
+    border-top: ridge 2px maroon; 
+    padding: 5px;
+    padding-bottom: 0px;
+}
+.weekly_list {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    color: black;
+    display: none;
+    background:white;
+    background-color:white;
+    box-shadow: 0px 5px 10px 4px white;
+    font-family: 'Graduate', cursive;
+    border-top: ridge 2px maroon; 
+    padding: 5px;
+    padding-bottom: 0px;
+}
+.yearly_list {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    color: black;
+    display: none;
+    background:white;
+    background-color:white;
+    box-shadow: 0px 5px 10px 4px white;
+    font-family: 'Graduate', cursive;
+    border-top: ridge 2px maroon; 
+    padding: 5px;
+    padding-bottom: 0px;
+}
+/* end reminder section */
+
+/* begin adding section */
+.adding_section {
+    width: 100%;
+    height: 300px;
+    background: black;
+}
+.adding_nav {
+    background: white;
+    box-shadow: 0px 0px 10px 4px white;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    padding: 3px;
+    background: red;
+    border: outset 5px darkred;
+}
+.button:active {
+    border: inset 5px darkred;
+    background: maroon;
+}
+/* end adding section */
