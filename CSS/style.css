@@ -22,6 +22,9 @@ body {
     box-shadow: 0px 0px 20px 2px red;
     position: fixed;
 }
+.mobile_header {
+    display: none;
+}
 .title {
     font-size: 5vw;
     font-family: 'Permanent Marker', cursive;
@@ -41,6 +44,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;   
+}
+.mobile_instructors {
+    display: none;
 }
 .instructor_box {
     display: flex;
@@ -80,6 +86,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow : 0px 0px 10px 1px gray;
 }
 .daily_title {
     font-family: 'Bungee Inline', cursive;
@@ -185,7 +192,7 @@ body {
 /* begin adding section */
 .adding_section {
     width: 100%;
-    height: 300px;
+    height: 200px;
     background: black;
 }
 .adding_nav {
@@ -207,3 +214,207 @@ body {
     background: maroon;
 }
 /* end adding section */
+
+/* begin about section */
+.about_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 10px;
+    font-family: 'Graduate', cursive;
+    text-align: center;
+    font-size: 32px;
+    text-shadow: .5px .5px gray;
+    background: red;
+    border: groove 4px darkred;
+    box-shadow: 1px 1px 20px 2px black;
+}
+.about_paragraph {
+    background:red;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Graduate', cursive;
+    border-top: ridge 2px maroon; 
+    padding: 5px;
+    box-shadow: 0px 5px 10px 4px black;
+}
+.about_paragraph p {
+    width: 450px;
+    margin: 0 auto;
+    font-size: 19px;
+    padding: 10px;
+}
+/* end about section */
+
+@media(max-width: 710px) {
+    .header {
+        display:none;
+    }
+    .mobile_header {
+        z-index: 1;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-shadow: 1px 1px white;
+        font-family: 'Bungee Inline', cursive;
+        background: red;
+        border: outset 5px maroon;
+        box-shadow: 0px 0px 20px 2px red;
+        position: fixed; 
+    }
+    .mobile_title {
+        margin-left: 10px;
+        font-size: 40px;
+    }
+    .menu_icon {
+        margin-right: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: white;
+    }
+    .instructor_section {
+        height: 750px;
+        width: 100%;
+    }
+    .instructors {
+        display: none;
+    }
+    .mobile_instructors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about_section {
+        width: 100%;
+    }
+    .about_title {
+        width: 90%;
+    }
+    .about_paragraph {
+        width: 89%;
+        display: flex;
+        align-items: center;
+    }
+    .about_paragraph p{
+        width: 90%;
+        font-size: 12px;
+    }
+     .reminder_section {
+        background: black;
+        width: 100%;
+        height: 500px;
+        border-top: groove 4px red;
+        align-items: left;
+        justify-content: flex-start;
+        
+}
+    .reminder_nav {
+        flex-direction: column;
+        height: 400px;
+        width: 100px;
+    }
+    .daily_reminders {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 100px;
+        font-size: 15px;
+    }
+    .daily_reminders:hover .daily_list {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+}
+    .daily_list {
+        position: absolute;
+        top: -2px;
+        left: 103px;
+        width: 100%;
+        color: black;
+        display: none;
+        background:white;
+        background-color:white;
+        box-shadow: 5px 0px 10px 4px white;
+        font-family: 'Graduate', cursive;
+        border-left: ridge 2px maroon;
+        border-top:none; 
+        padding: 5px;
+        padding-bottom: 0px;
+}
+    .weekly_reminders {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 100px;
+        font-size: 15px;
+    }
+    .weekly_reminders:hover .weekly_list {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+}
+    .weekly_list {
+        position: absolute;
+        top: -2px;
+        left: 103px;
+        width: 100%;
+        color: black;
+        display: none;
+        background:white;
+        background-color:white;
+        box-shadow: 5px 0px 10px 4px white;
+        font-family: 'Graduate', cursive;
+        border-left: ridge 2px maroon;
+        border-top:none; 
+        padding: 5px;
+        padding-bottom: 0px;
+}
+    .yearly_reminders {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 100px;
+        font-size: 15px;
+    }
+    .yearly_reminders:hover .yearly_list {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+}
+    .yearly_list {
+        position: absolute;
+        top: -2px;
+        left: 103px;
+        width: 100%;
+        color: black;
+        display: none;
+        background:white;
+        background-color:white;
+        box-shadow: 5px 0px 10px 4px white;
+        font-family: 'Graduate', cursive;
+        border-left: ridge 2px maroon;
+        border-top:none; 
+        padding: 5px;
+        padding-bottom: 0px;
+} 
+    .adding_nav {
+        width: 70vw;
+    }
+
+}
